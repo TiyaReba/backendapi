@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname,'/build')));
 // })
 // 4.API creation
  
-app.get('/',async(req,res)=>{
+app.get('/api',async(req,res)=>{
     // console.log("get ")
    var result = await movieModel.find();
    res.json(result);
