@@ -101,9 +101,9 @@ app.post('/api/search',async(req,res)=>{
 
     }
 })
-app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname,'/build/index.html'));
- });
+// app.get('/*', function(req, res) {
+//     res.sendFile(path.join(__dirname,'/build/index.html'));
+//  });
 // 5.port assigning
 app.listen(8080,()=>{
     console.log("lisiting to port 3001")
